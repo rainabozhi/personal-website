@@ -21,7 +21,7 @@ burger.classList.toggle('toggle')
 
     main.addEventListener("click", () => {
         nav.classList.toggle('nav-active')
-        burger.classList.remove('toggle')
+        burger.classList.toggle('toggle')
 
         navLinks.forEach((link, index) => {
             if(link.style.animation) {
