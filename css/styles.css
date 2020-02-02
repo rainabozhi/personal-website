@@ -117,7 +117,7 @@ body{
 .nav-links{
     position: absolute; 
     right:0; 
-    height: 92vh;
+    height: 82vh;
     top: 12vh; 
     background-color: rgb(151, 182, 238);
     display: flex; 
