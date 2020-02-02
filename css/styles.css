@@ -118,7 +118,7 @@ body{
     position: absolute; 
     right:0; 
     height: 92vh;
-    top: 10vh; 
+    top: 12vh; 
     background-color: rgb(151, 182, 238);
     display: flex; 
     flex-direction: column;
@@ -173,7 +173,7 @@ body{
 @media(max-width: 1024px){
     .nav-links{
         width: 40%; 
-        top: 9vh; 
+        top: 12vh; 
     }
     .mountain{
         width: 65%;
