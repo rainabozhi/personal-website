@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-size: 1rem; 
+}
+body{
+    text-align: center; 
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: #f7f9fc;
+    color: grey; 
+}
+
+/* IMAGES */
+
+.right-cloud{
+    position: absolute; 
+    right: 10%;
+    top: 20%; 
+}
+.left-cloud{
+    position: absolute; 
+    top: 70%; 
+    left: 20%; 
+}
+.upper-cloud{
+    position: absolute; 
+    top: 18%; 
+    left: 10%; 
+}
+.mountain{
+    width: 80%; 
+    right: 0.5%;
+    position: fixed; 
+    z-index: -10; 
+    height: 100%; 
+    margin-bottom: -40px; 
+}
+.profile-img{
+    border-radius: 50%;
+    width:200px;
+}
+.screen-img{
+    float: left; 
+    margin-right: 30px; 
+}
+.cookie-img{
+    float: right; 
+    margin-left: 30px; 
+}
+
+
+
+/* CONTAINERS */
+.nav{
+    padding: 20px auto; 
+    display: flex; 
+    position: fixed; 
+    z-index: 1000; 
+    width: 100%;
+    justify-content: space-around; 
+    align-items: center; 
+    min-height: 10vh; 
+    background-color: rgba(151, 182, 238, 0.8); 
+    transition: 0.8s;
+  
+}
+
+.nav-links{
+    display: flex; 
+    justify-content: space-around;
+    width: 35%; 
+}
+.nav-links a{
+    color: #436597;
+    text-decoration: none;
+    letter-spacing: 3px; 
+    font-weight: bold; 
+   
+}
+.nav-links li{
+    list-style: none;
+}
+.profile-img-nav{
+    width: 80px; 
+    border-radius: 50%; 
+    opacity: 0.8; 
+}
+.burger{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden; 
+    }
+    h1{
+        font-size: 3.5rem;
+        line-height: 1.5;
+        top: 30%;
+    }
+    .mountain{
+        width: 65%;
+        top: 41.5%;
+        position: fixed; 
+        z-index: -10; 
+    } 
+   
+    .profile-img-nav{
+        width: 50px; 
+        margin: 20px 0; 
+    }
+    .nav{
+        background-color: rgb(151, 182, 238);
+        min-height: 6vh; 
+        width: 100vw; 
+    }
+.nav-links{
+    position: absolute; 
+    right:0; 
+    height: 92vh;
+    top: 10vh; 
+    background-color: rgb(151, 182, 238);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000; 
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in; 
+}
+.nav-links li{
+    opacity: 0; 
+
+}
+.nav-links a{
+    color: #4c71aa; 
+    
+}
+.burger{
+    display: block; 
+    cursor: pointer; 
+}
+.nav-active{
+    transform: translateX(0%);
+}
+.icons-ref a{
+    font-size: 0.6rem; 
+}
+
+
+}
+@keyframes navLinkFade{
+    from {
+        opacity: 0; 
+        transform: translateX(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px)
+}
+.toggle .line2{
+    opacity: 0; 
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px)
+}
+
+
+
+@media(max-width: 1024px){
+    .nav-links{
+        width: 40%; 
+        top: 9vh; 
+    }
+    .mountain{
+        width: 65%;
+        top: 41.5%;
+        position: fixed; 
+        z-index: -10; 
+    }
+
+}
+.burger div{
+    width: 25px; 
+    height:3px; 
+    margin: 5px; 
+    background-color: #6699e6;
+    transition: all 0.3s ease; 
+}
+
+
+.top-container {
+    background: linear-gradient(to bottom, #b5cdf1 20%, #6699e6 100%);
+    padding-top: 0; 
+    overflow: hidden; 
+    color: #f7fbfc;
+    position: relative; 
+    height: 100vh; 
+    z-index: 2; 
+}
+.middle-container{
+    position: relative; 
+    margin: 50px 0 20px; 
+    width: 100vw; 
+    padding: 0; 
+    z-index: 20; 
+}
+.bottom-container{
+    background-color: #b5cdf1;
+    margin: 80px auto 0; 
+    padding: 20px 0 10px; 
+    color: #769fcd;
+    }
+.bottom-container__text{
+        position: relative; 
+        z-index: 200; 
+    }
+.contact-me{
+    width: 80%; 
+    margin: 40px auto 60px; 
+    position: relative; 
+    z-index: 100; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.skills{
+    margin: 40px auto; 
+}
+.skill-row{
+    width: 80%;
+    margin: 50px auto; 
+    text-align: left;  
+}
+hr{
+    border-style: dotted none none; 
+    border-width: 5px; 
+    margin: 50px auto; 
+    border-color: rgba(126, 118, 118, 0.4);
+    width: 40px; 
+    height: 0; 
+}
+h1{
+    margin: 30px auto 0; 
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300; 
+    font-size: 5.625rem;
+    line-height: 1.5; 
+    position: relative; 
+    top: 20%;
+    z-index: 2; 
+    text-shadow: 1px 0.5px lightgrey ;
+}
+
+h4{
+    margin: 30px auto 0; 
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300; 
+    font-size: 2rem; 
+    line-height: 2; 
+    position: relative;
+    top: 25%; 
+    z-index: 2; 
+    text-shadow: 1px 1px lightgrey ;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #769fcd;
+    margin-top: 20px; 
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 1rem; 
+    margin: 30px auto; 
+    color: #769fcd;
+}
+p{
+    line-height: 2; 
+}
+.footer-link{
+   filter: opacity( 0.5);
+   filter: invert(100%);
+   width: 5rem; 
+    padding: 0 20px; 
+
+}
+a{
+    color: rgb(12, 44, 104);
+    font-family: 'Montserrat', sans-serif;
+}
+a:hover{
+    color: #eaf6f6;
+}
+.footer-link:hover{
+    filter: invert(60%);
+}
+.icons-ref a{
+    font-size: 0.7rem; 
+}
+
+.icons-ref{
+    color: #3d4763;
+    font-size: 10px; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile{
+    width: 80%; 
+    margin: 40px auto; 
+}
+.profile p{
+    margin: 50px auto;
+}
+.copyright{
+   color: #4551708e;
+   padding: 20px 0; 
+}
+
+.my-button {
+    box-shadow: 0px 10px 14px -7px #b9cced;
+    background: linear-gradient(to bottom, #b5cdf1 30%, #82acec 100%);
+    border-radius: 8px;
+    cursor: pointer;
+    color: #f7fbfc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+    margin-top: 25px;    
+}
+.my-button:hover{
+    background: linear-gradient(to top, #b5cdf1 30%, #82acec 100%);
+}
