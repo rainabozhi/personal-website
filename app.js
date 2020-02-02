@@ -18,6 +18,12 @@ const navSlide = () => {
     //burger animation
 burger.classList.toggle('toggle')
     })
+}
+const navClose = () => {
+    const burger = document.querySelector(".burger")
+    const nav = document.querySelector(".nav-links")
+    const navLinks = document.querySelectorAll(".nav-links li")
+    const main = document.querySelector("main")
 
     main.addEventListener("click", () => {
         nav.classList.remove('nav-active')
@@ -31,9 +37,7 @@ burger.classList.toggle('toggle')
             }
         })
     })
-   
 }
-
 
 
 const navHide = () => {
@@ -56,4 +60,4 @@ const navHide = () => {
 
 navSlide()
 navHide()
-
+navClose()
