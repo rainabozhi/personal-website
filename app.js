@@ -20,7 +20,7 @@ burger.classList.toggle('toggle')
     })
 
     main.addEventListener("click", () => {
-        nav.classList.toggle('nav-active')
+        nav.classList.remove('nav-active')
         burger.classList.remove('toggle')
 
         navLinks.forEach((link, index) => {
